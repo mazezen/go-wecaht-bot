@@ -1,4 +1,4 @@
-module github.com/jeffcail/go-wechat-bot
+module github.com/mazezen/go-wechat-bot
 
 go 1.17
 

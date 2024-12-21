@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/jeffcail/gorequest"
+	"github.com/mazezen/gorequest"
 )
 
 const BASEURL = "https://api.openai.com/v1/"
@@ -29,15 +29,16 @@ type Response struct {
 }
 
 // Completions Creates a completion for the provided prompt and parameters
-// curl https://api.openai.com/v1/completions \
-//  -H 'Content-Type: application/json' \
-//  -H 'Authorization: Bearer chatGPT api key' \
-//  -d '{
-//  "model": "text-davinci-003",
-//  "prompt": "Say this is a test",
-//  "max_tokens": 7,
-//  "temperature": 0
-// }'
+//
+//	curl https://api.openai.com/v1/completions \
+//	 -H 'Content-Type: application/json' \
+//	 -H 'Authorization: Bearer chatGPT api key' \
+//	 -d '{
+//	 "model": "text-davinci-003",
+//	 "prompt": "Say this is a test",
+//	 "max_tokens": 7,
+//	 "temperature": 0
+//	}'
 func Completions(msg string) (string, error) {
 	h := buildRequestHeader()
 	p := buildRequestBody(msg)

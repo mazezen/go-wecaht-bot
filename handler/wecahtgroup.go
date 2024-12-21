@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/eatmoreapple/openwechat"
-	"github.com/jeffcail/go-wechat-bot/common/chatGpt"
+	"github.com/mazezen/go-wechat-bot/common/chatGpt"
 )
 
 type GroupMessageHandler struct{}

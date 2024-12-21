@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/eatmoreapple/openwechat"
-	"github.com/jeffcail/go-wechat-bot/handler"
+	"github.com/mazezen/go-wechat-bot/handler"
 )
 
 func main() {
